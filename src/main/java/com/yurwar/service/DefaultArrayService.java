@@ -16,7 +16,7 @@ public class DefaultArrayService implements ArrayService {
         int lessThanZeroElementsCount = ParallelArrays
                 .countElementsByCondition(array, el -> el < 0);
 
-        System.out.println("Count of elements by condition: " + lessThanZeroElementsCount);
+        System.out.println("Count of elements by condition (el < 0): " + lessThanZeroElementsCount);
 
         Map.Entry<Integer, Integer> maxEntry = ParallelArrays.findMaxEntry(array);
 
